@@ -205,9 +205,7 @@ class MTHQ extends Component {
         </div>
         <div className="space"></div>
         <div className="Question">
-          <div>
-            11111111
-          </div>
+          <div>11111111</div>
           <div className="Choice">
             <input type="radio" className="question1" value="Very Unlikely" />
             Very Unlikely
@@ -240,4 +238,4 @@ class MTHQ extends Component {
     );
   }
 }
-export default MTHQ;
+export default MHTQ;
