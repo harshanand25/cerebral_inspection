@@ -2,29 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 // import './index.css';
 // import App from "./App";
-import MHTQ from "./MHTQ";
-// import Palindrome from "./Palindrome";
-// import Spread from "./SpreadOperator";
-// import Ternery from "./TerneryOp";
-// import Factorial from "./Factorial";
-// import Prime from "./Prime";
+// import MHTQ from "./MHTQ";
+import Dashboard from "./Dashboard";
 // import Loginpage from "./Loginpage";
-// import RoutingEg from "./RoutingEg";
-// import HH1 from "./HH1";
 import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    {/* <Spread /> */}
-    {/* <Ternery /> */}
-    {/* <Factorial /> */}
-    {/* <RoutingEg /> */}
-    {/* <HH1 /> */}
-    {/* <Prime /> */}
     {/* <Loginpage /> */}
-    {/* <Palindrome /> */}
-    <MHTQ />
+    <Dashboard />
+    {/* <MHTQ /> */}
   </React.StrictMode>
 );
 
