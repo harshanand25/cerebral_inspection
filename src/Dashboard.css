@@ -13,6 +13,7 @@
 }
 .Heading
 {
+	position: absolute;
 	top:16px;
 	font-size: 16px;
 	margin-left: 100px;
@@ -26,12 +27,12 @@
 .login-btn
 {
   position: absolute;
-  top:25px;
-  left: 80%;
-  background-color: #c2fbd7;
+  bottom: 1.5em;
+  right: 1em;
+  background-color: #d8c2fb;
   border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
-  color: green;
+  box-shadow: rgba(117, 85, 222, 0.305) 0 -25px 18px -14px inset,rgba(117, 85, 222, .15) 0 1px 2px,rgba(117, 85, 222, .15) 0 2px 4px,rgba(117, 85, 222, .15) 0 4px 8px,rgba(117, 85, 222, 0.15) 0 8px 16px,rgba(117, 85, 222, .15) 0 16px 32px;
+  color: rgb(74, 0, 74);
   cursor: pointer;
   display: inline-block;
   font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
@@ -41,6 +42,7 @@
   transition: all 250ms;
   border: 0;
   font-size: 16px;
+  white-space: nowrap;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -48,9 +50,10 @@
 }
 .login-btn:hover 
 {
-  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  box-shadow: rgba(117, 85, 222, 0.35) 0 -25px 18px -14px inset,rgba(117, 85, 222,.25) 0 1px 2px,rgba(117, 85, 222,.25) 0 2px 4px,rgba(117, 85, 222,.25) 0 4px 8px,rgba(117, 85, 222,.25) 0 8px 16px,rgba(117, 85, 222,.25) 0 16px 32px;
   transform: scale(1.07);
 }
+
 .DB-header
 {
 
