@@ -1,7 +1,7 @@
 import logo from "./logo.png";
 import React, { Component } from "react";
 import "./Dashboard.css";
-class MTHQ extends Component {
+class Dashboard extends Component {
   render() {
     return (
       <div className="header-div">
