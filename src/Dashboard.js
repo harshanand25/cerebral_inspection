@@ -2,6 +2,9 @@ import logo from "./logo.png";
 import React, { Component } from "react";
 import "./Dashboard.css";
 class Dashboard extends Component {
+  componentDidMount() {
+    document.title = "Cerebral Inspection";
+  }
   render() {
     return (
       <form>
