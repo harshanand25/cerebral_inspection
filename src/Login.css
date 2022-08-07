@@ -1,7 +1,7 @@
-/* *{
+*{
   margin: 0px;
   padding: 0px;;
-} */
+}
 
 body{
   font-family: Arial, Helvetica, sans-serif;
@@ -51,7 +51,6 @@ body{
   width: 150px;
   margin: 20px auto;
 }
-
 
 .box-2{
   background-color: white;
@@ -103,10 +102,6 @@ body{
   display: none;
 }
 
-
-
-
-
 .signup-form-container
 {
   position: relative;
@@ -116,7 +111,6 @@ body{
   text-align: center;
   display: none;
 }
-
 
 .signup-form-container h1
 {
@@ -136,6 +130,7 @@ body{
   outline: none;
   background-color: rgb(56, 189, 149);  
 }
+
 .space
 {
     padding: 10px;
