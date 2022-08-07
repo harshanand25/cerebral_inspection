@@ -16,9 +16,9 @@ class Login extends Component {
               value="login"
             />
           </form>
-
           <div className="login-help">
-            Don't have an Account Yet? <a href="#">Register here.</a>
+            Don't have an Account Yet?{" "}
+            <a href="src/Signup.js">Register here.</a>
           </div>
         </div>
       </div>
