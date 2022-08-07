@@ -3,15 +3,13 @@ import ReactDOM from "react-dom/client";
 // import './index.css';
 // import App from "./App";
 // import MHTQ from "./MHTQ";
-// import Login from "./Login";
-import AdminLogin from "./AdminLogin";
+import Login from "./Login";
 // import Dashboard from "./Dashboard";
 import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <Login /> */}
-    <AdminLogin />
+    <Login />
     {/* <Dashboard /> */}
     {/* <MHTQ /> */}
   </React.StrictMode>
