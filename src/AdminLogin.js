@@ -18,7 +18,7 @@ class AdminLogin extends Component {
           </form>
 
           <div className="login-help">
-            Don't have an Account Yet?<a href="#">Register</a> here.
+            Don't have an Account Yet? <a href="#">Register here.</a>
           </div>
         </div>
       </div>
