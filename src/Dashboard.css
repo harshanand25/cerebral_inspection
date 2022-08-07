@@ -1,15 +1,18 @@
 :root {
-  --purple: #1e90ff;
-  --purpleL: #ffffff; 
-  --purpleD: #ffffff;
+    --purple: #1e90ff;
+    --purpleL: #ffffff;
+    --purpleD: #ffffff;
 }
 
 /* var(--purple) */
 /* var(--purpleD) */
 /* var(--purpleL) */
-body
-{
+body {
     background-color: rgb(177, 203, 227);
+}
+
+.Header-logo {
+    margin-left: 20px;
 }
 
 .header-div {
@@ -29,9 +32,8 @@ body
     position: absolute;
     top: 16px;
     font-size: 16px;
-    margin-left: 100px;
+    margin-left: 125px;
     margin-top: 5px;
-    position: absolute;
     font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
     font-size: 220%;
     font-weight: 250;
@@ -67,8 +69,15 @@ body
     transform: scale(1.07);
 }
 
+.login-btn:active {
+    opacity: 0.5;
+}
+
 .Description {
     position: fixed;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 2.2rem;
     height: 2500px;
     top: 107px;
     left: 20px;
@@ -76,12 +85,14 @@ body
     bottom: 40x;
     padding: 10px;
     border-radius: 15px;
-    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
-    background-color: rgb(143, 185, 239);
+    background-image: linear-gradient(90.07deg, #A265F2 -16.29%, #985EFF -9.5%, #EA9A91 118.76%, rgba(225, 147, 157, 0.77) 127.64%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /* font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif; */
+    /* background-color: rgb(143, 185, 239); */
     box-shadow: rgba(85, 119, 222, 0.35) 0 -25px 18px -14px inset, rgba(85, 119, 222, .25) 0 1px 2px, rgba(85, 119, 222, .25) 0 2px 4px, rgba(85, 119, 222, .25) 0 4px 8px, rgba(85, 119, 222, .25) 0 8px 16px, rgba(85, 119, 222, .25) 0 16px 32px;
 }
-
-.DB-header {}
 
 .Header-logo {
     position: relative;
@@ -89,7 +100,6 @@ body
     max-width: 90px;
     height: auto;
 }
-
 footer {
     background-color: #222;
     color: #fff;
