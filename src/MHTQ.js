@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./MHTQ.css";
-class MTHQ extends Component {
+class MHTQ extends Component {
   render() {
     return (
       <form className="MHTest" id="MHTest">

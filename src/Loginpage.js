@@ -1,4 +1,6 @@
-﻿import React, { Component } from "react";
+﻿// import ScriptTag from "react-script-tag";
+import React, { Component } from "react";
+// import { Helmet } from "react-helmet";
 import "./Loginpage.css";
 class Loginpage extends Component {
   render() {
@@ -64,11 +66,11 @@ class Loginpage extends Component {
             </div>
           </div>
         </body>
-        <script>
-          {/* document.querySelector('.img__btn').addEventListener('click',
+        {/* <script>
+          document.querySelector('.img__btn').addEventListener('click',
           function())
-          {document.querySelector(".cont").classList.toggle("s--signup")} */}
-        </script>
+          {document.querySelector(".cont").classList.toggle("s--signup")}
+        </script> */}
       </form>
     );
   }
