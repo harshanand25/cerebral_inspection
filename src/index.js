@@ -5,14 +5,16 @@ import ReactDOM from "react-dom/client";
 // import MHTQ from "./MHTQ";
 // import Login from "./Login";
 // import Signup from "./Signup";
-import Dashboard from "./Dashboard";
+// import Dashboard from "./Dashboard";
+import Testselector from "./Testselector";
 import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    {/* <Dashboard /> */}
     {/* <Login /> */}
     {/* <Signup /> */}
-    <Dashboard />
+    <Testselector />
     {/* <MHTQ /> */}
   </React.StrictMode>
 );
