@@ -1,0 +1,68 @@
+.MHT
+{
+    text-align: center;
+    position: fixed;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 2.2rem;
+    cursor: pointer;
+    border: none;
+    height: 80%;
+    width: 47% ;
+    top: 107px;
+    left: 50%;
+    right: 20px;
+    bottom: 40x;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    background-image: linear-gradient(90.07deg, #A265F2 -16.29%, #985EFF -9.5%, #EA9A91 118.76%, rgba(225, 147, 157, 0.77) 127.64%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    overflow: hidden;
+    word-wrap:break-word; /*TO wrap the text inside the button*/
+    box-shadow: rgba(85, 119, 222, 0.35) 0 -25px 18px -14px inset, rgba(85, 119, 222, .25) 0 1px 2px, rgba(85, 119, 222, .25) 0 2px 4px, rgba(85, 119, 222, .25) 0 4px 8px, rgba(85, 119, 222, .25) 0 8px 16px, rgba(85, 119, 222, .25) 0 16px 32px;
+}
+
+.MHT:hover{
+    transform: translateY(50%);
+    transform: scale(1.01);
+    transition: all 0.5s;
+}
+
+.MHT:hover::after{
+    content: attr(data-hover);
+    font-size: 24px;
+    transform: scale(1.01);
+}
+
+.CBT
+{
+    text-align: center;
+    position: fixed;
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 2.2rem;
+    cursor: pointer;
+    border: none;
+    height: 80%;
+    width: 45.5% ;
+    top: 107px;
+    left: 40px;
+    right: 20px;
+    bottom: 40x;
+    padding: 10px;
+    border-radius: 15px;
+    background-image: linear-gradient(90.07deg, #A265F2 -16.29%, #985EFF -9.5%, #EA9A91 118.76%, rgba(225, 147, 157, 0.77) 127.64%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    box-shadow: rgba(85, 119, 222, 0.35) 0 -25px 18px -14px inset, rgba(85, 119, 222, .25) 0 1px 2px, rgba(85, 119, 222, .25) 0 2px 4px, rgba(85, 119, 222, .25) 0 4px 8px, rgba(85, 119, 222, .25) 0 8px 16px, rgba(85, 119, 222, .25) 0 16px 32px;
+}
+
+.CBT:hover 
+{
+    box-shadow: rgba(85, 119, 222, 0.35) 0 -25px 18px -14px inset, rgba(85, 119, 222, .25) 0 1px 2px, rgba(85, 119, 222, .25) 0 2px 4px, rgba(85, 119, 222, .25) 0 4px 8px, rgba(85, 119, 222, .25) 0 8px 16px, rgba(85, 119, 222, .25) 0 16px 32px;
+    transform: scale(1.01);
+}

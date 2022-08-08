@@ -6,7 +6,8 @@ import ReactDOM from "react-dom/client";
 // import Login from "./Login";
 // import Signup from "./Signup";
 // import Dashboard from "./Dashboard";
-import Testselector from "./Testselector";
+import Testselection from "./Testselection";
+// import Testselector from "./Testselector";
 import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,7 +15,8 @@ root.render(
     {/* <Dashboard /> */}
     {/* <Login /> */}
     {/* <Signup /> */}
-    <Testselector />
+    {/* <Testselector /> */}
+    <Testselection />
     {/* <MHTQ /> */}
   </React.StrictMode>
 );

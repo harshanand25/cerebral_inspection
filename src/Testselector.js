@@ -8,12 +8,14 @@ class Testselector extends Component {
   render() {
     return (
       <form>
-        <button button className="MHT MHT-continue">
-          {/* <h2>Mental Health Test</h2> */}
-        </button>
-        <button className="CBT CBT-continue">
-          {/* <h2>ColorBlindness Test</h2> */}
-        </button>
+        <div className="header-div">
+          <button className="MHT MHT-continue">
+            {/* <h2>Mental Health Test</h2> */}
+          </button>
+          <button className="CBT CBT-continue">
+            {/* <h2>ColorBlindness Test</h2> */}
+          </button>
+        </div>
       </form>
     );
   }
