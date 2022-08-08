@@ -1,6 +1,8 @@
 import logo from "./logo.png";
 import React, { Component } from "react";
 import "./Dashboard.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./Login";
 class Dashboard extends Component {
   componentDidMount() {
     document.title = "Cerebral Inspection";
@@ -10,7 +12,14 @@ class Dashboard extends Component {
       <form>
         <div className="header-div">
           <div className="Heading">CEREBRAL INSPECTION</div>
-          <button className="login-btn">Join Our Community</button>
+          <BrowserRouter>
+            <Routes>
+              <Route className="login-btn" path="/login" element={<Login />}>
+                Join Our Community
+              </Route>
+            </Routes>
+          </BrowserRouter>
+
           <header className="DB-header">
             <img src={logo} className="Header-logo" alt="logo" />
             <div className="Description">Dashboard</div>
