@@ -5,7 +5,7 @@ import ReactDOM from "react-dom/client";
 // import MHTQ from "./MHTQ";
 // import Login from "./Login";
 // import Signup from "./Signup";
-// import Dashboard from "./Dashboard";
+import Dashboard from "./Dashboard";
 // import Testselection from "./Testselection";
 // import Testselector from "./Testselector";
 // import RoutingEg from "./RoutingEg";
@@ -17,7 +17,7 @@ root.render(
     {/* <Login /> */}
     {/* <Signup /> */}
     {/* <Testselector /> */}
-    <Testselection />
+    {/* <Testselection /> */}
     {/* <MHTQ /> */}
     {/* <RoutingEg /> */}
   </React.StrictMode>
