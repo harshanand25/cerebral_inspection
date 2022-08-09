@@ -26,9 +26,9 @@
 }
 
 .MHT:hover{
-    transform: translateY(50%);
+    font-size: 0;
     transform: scale(1.01);
-    transition: all 0.5s;
+    transition: transform 0.5s;
 }
 
 .MHT:hover::after{
@@ -63,6 +63,37 @@
 
 .CBT:hover 
 {
-    box-shadow: rgba(85, 119, 222, 0.35) 0 -25px 18px -14px inset, rgba(85, 119, 222, .25) 0 1px 2px, rgba(85, 119, 222, .25) 0 2px 4px, rgba(85, 119, 222, .25) 0 4px 8px, rgba(85, 119, 222, .25) 0 8px 16px, rgba(85, 119, 222, .25) 0 16px 32px;
+    font-size: 0;
     transform: scale(1.01);
+    transition: transform 0.5s;
+}
+
+.CBT:hover::after{
+    content: attr(data-hover);
+    font-size: 24px;
+    transform: scale(1.01);
+}
+
+.header-div {
+    width: 100%;
+    height: 87px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    z-index: 7;
+    text-align: center;
+    /* padding-top: 30px; */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
+
+}
+
+.test_desc{
+    font-weight: 800;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 }

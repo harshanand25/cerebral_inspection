@@ -2,7 +2,7 @@
 // import Prime from "./Prime";
 import React, { Component } from "react";
 import HH1 from "./HH1";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes,Link } from "react-router-dom";
 import { One } from "./One";
 import { Two } from "./Two";
 import { Home } from "./Home";
@@ -18,9 +18,9 @@ class RoutingEg extends Component {
           </div>
           <div>
             <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/Factorial" element={<One />} />
-              <Route exact path="/Prime" element={<Two />} />
+              <Route path="/Factorial" element={<One />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/Prime" element={<Two />} />
             </Routes>
           </div>
         </Router>

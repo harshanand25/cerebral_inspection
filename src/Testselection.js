@@ -8,10 +8,13 @@ class Testselection extends Component {
   render() {
     return (
       <form>
-        <button className="MHT" data-hover="YOOOOO WASSSUPdafdafadfadfadfadffffh hhhhh hhhhhhh hhhhhhhhh hhhhhhhhhhr rrrrrrrrrrrrr rrrrrrrrrrr rrrrrrrrrrrrrrrrrr ">Mental Health Test
+        <div className="header-div">
+          <p class="test_desc">Select the test you want to take!</p>
+          </div>
+        <button className="MHT" data-hover="This is a Mental Health Test!">Mental Health Test
         </button>
-        <button className="CBT" type="button">
-          <h2>ColorBlindness Test</h2>
+        <button className="CBT" data-hover="This is a Color Blindness Test!" type="button">
+          ColorBlindness Test
         </button>
       </form>
     );
