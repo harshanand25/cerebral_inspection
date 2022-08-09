@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 // import './index.css';
 // import App from "./App";
 // import MHTQ from "./MHTQ";
-// import Login from "./Login";
+import Login from "./Login";
 // import Signup from "./Signup";
 // import Dashboard from "./Dashboard";
 import Testselection from "./Testselection";
@@ -14,7 +14,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <Dashboard /> */}
+<<<<<<< HEAD
     {/* <Login /> */}
+=======
+    <Login />
+>>>>>>> c6c72cd535afcd4025d728489936b78b815f9d33
     {/* <Signup /> */}
     {/* <Testselector /> */}
     <Testselection />

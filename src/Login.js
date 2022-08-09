@@ -3,7 +3,14 @@ import "./Login.css";
 class Login extends Component {
   render() {
     return (
-      <div>
+      <body>  
+
+      <div class="login-body">
+        <div class="login-graphic">
+          <p class="login-graphic-text">BLAHAHAHAH</p>
+        </div>
+      </div>
+
         <div class="login-card">
           <h1>Log In</h1>
           <form>
@@ -14,14 +21,14 @@ class Login extends Component {
               name="login"
               className="login login-submit"
               value="login"
-            />
+              />
           </form>
           <div className="login-help">
             Don't have an Account Yet?{" "}
             <a href="src/Signup.js">Register here.</a>
           </div>
         </div>
-      </div>
+    </body>
     );
   }
 }
