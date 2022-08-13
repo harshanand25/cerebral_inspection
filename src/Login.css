@@ -12,45 +12,33 @@ body {
 }
 .login-body{
   margin-left: -20px;
-  margin-top: -10px; /* Set to 20px if you want shadow at the top side */
-  margin-bottom: -10px; /* Set to 20px if you want shadow at the bottom side */
-  border: 1px solid rgb(255, 255, 255);
-/* box-shadow: rgba(85, 119, 222, 0.35) 0 -25px 18px -14px inset, rgba(85, 119, 222, .25) 0 1px 2px, rgba(85, 119, 222, .25) 0 2px 4px, rgba(85, 119, 222, .25) 0 4px 8px, rgba(85, 119, 222, .25) 0 8px 16px, rgba(85, 119, 222, .25) 0 16px 32px; */
-/* box-shadow:  rgba(85, 119, 222, .25) 0 16px 32px inset; */
-box-shadow: -10px 0 5px -2px #888 inset;
-overflow:hidden;
-clip-path: inset(0px -15px 0px 0px);
-/* box-shadow: 0px 0px 20px black; */
-
-height: 720px;
-/* width: 600px; */
-margin-right: 45%;
-/* border-radius: 10px; */
-padding: 10px;
-
+  margin-top: -10px;
+  margin-bottom: -10px;
+  box-shadow: -10px 0 5px -2px #888 inset;
+  overflow:hidden;
+  height: 750px;
+  padding: 10px;
+  width: 800px;
+}
+.login-graphic-text{
+  font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #a0a0a0;
 }
 
 .login-graphic{
   
 }
-#Login-Place{
-  right: 60%;
-  margin-left: 300px;
-  margin-top: 200px;
-}
 
 .login-card {
-  right: 60%;
-  /* margin-left: 10px; */
-  margin-left: 300px;
-  margin-top: 200px;
+  margin-top: -540px;
+  left: 66.5%;
   padding: 40px;
   width: 274px;
   background-color: #F7F7F7;
   border-radius: 2px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
- position: absolute;
+  position: relative;
 }
 
 .login-card h1 {
