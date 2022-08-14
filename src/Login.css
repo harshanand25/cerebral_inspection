@@ -20,13 +20,14 @@ body {
   padding: 10px;
   width: 800px;
 }
-.login-graphic-text{
-  font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif;
-  color: #a0a0a0;
-}
 
 .login-graphic{
   
+}
+
+.login-graphic-text{
+  font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #a0a0a0;
 }
 
 .login-card {
