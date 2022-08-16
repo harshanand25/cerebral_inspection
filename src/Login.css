@@ -11,15 +11,17 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .login-body{
+  
   margin-left: -20px;
   margin-top: -10px;
   margin-bottom: -10px;
-  box-shadow: -10px 0 5px -2px #888 inset;
+  /* box-shadow: -10px 0 5px -2px #888 inset; */
   overflow:hidden;
   height: 750px;
   padding: 10px;
   width: 800px;
-  background-color: #e65b5b;
+  background-image: url ("https://media.istockphoto.com/vectors/pattern-seamless-abstract-background-chevron-gold-color-and-line-vector-id956840842");
+  /* background-color: #daa8a8; */
 }
 
 .login-graphic{

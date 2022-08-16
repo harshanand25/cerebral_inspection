@@ -1,3 +1,4 @@
+// import bgimage from "./bgimage.jpeg";
 import React, { Component } from "react";
 import "./Login.css";
 class Login extends Component {
@@ -8,7 +9,7 @@ class Login extends Component {
           <div class="login-graphic">
             <p class="login-graphic-text">BLAHAHAHAH</p>
           </div>
-        </div> 
+        </div>
         <div class="login-card">
           <h1>Log In</h1>
           <form>
