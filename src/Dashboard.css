@@ -1,14 +1,17 @@
 :root {
-    --purple: #1e90ff;
-    --purpleL: #ffffff;
-    --purpleD: #ffffff;
+    --blue: #93c9ff;
+    --blueL: #fafdff;
+    --blueD: #baeaff;
+    --shadow: rgba(85, 119, 222, 0.35);
+    --shadowb: rgba(85, 119, 222, .25);
 }
 
-/* var(--purple) */
-/* var(--purpleD) */
-/* var(--purpleL) */
+/* var(--blue) */
+/* var(--blueD) */
+/* var(--blueL) */
 body {
-    background-color: rgb(177, 203, 227);
+    background-color: var(--blueL);
+    background-image: url('https://img.freepik.com/free-vector/white-background-with-triangle-patterns_1017-18410.jpg?w=1800&t=st=1660760057~exp=1660760657~hmac=8a5d19f471d1014326c8eab38b13764e66df8a3113521797f55e0f587e7b0933');
 }
 
 .Header-logo {
@@ -18,7 +21,7 @@ body {
 .header-div {
     width: 100%;
     height: 87px;
-    background-color: rgb(132, 168, 215);
+    background-color: var(--blue);
     position: absolute;
     top: 0;
     left: 0;
@@ -37,16 +40,18 @@ body {
     font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
     font-size: 220%;
     font-weight: 250;
-    color: beige;
+    color: rgb(255, 255, 255);
 }
 
 .login-btn {
     position: absolute;
     bottom: 1.5em;
     right: 1em;
-    background-color: #c2d5fb;
+    /* background-color: #c2d5fb; */
+    background-color:var(--blueL);
     border-radius: 100px;
-    box-shadow: rgba(85, 119, 222, 0.305) 0 -25px 18px -14px inset, rgba(85, 119, 222, .15) 0 1px 2px, rgba(85, 119, 222, .15) 0 2px 4px, rgba(85, 119, 222, .15) 0 4px 8px, rgba(85, 119, 222, 0.15) 0 8px 16px, rgba(85, 119, 222, 0.15) 0 16px 32px;
+    /* box-shadow: rgba(85, 119, 222, 0.305) 0 -25px 18px -14px inset, rgba(85, 119, 222, .15) 0 1px 2px, rgba(85, 119, 222, .15) 0 2px 4px, rgba(85, 119, 222, .15) 0 4px 8px, rgba(85, 119, 222, 0.15) 0 8px 16px, rgba(85, 119, 222, 0.15) 0 16px 32px; */
+    box-shadow: var(--shadow) 0 -25px 18px -14px inset, var(--shadowb) 0 1px 2px, var(--shadowb) 0 2px 4px, var(--shadowb) 0 4px 8px, var(--shadowb) 0 8px 16px, var(--shadowb) 0 16px 32px;
     color: rgb(8, 26, 106);
     cursor: pointer;
     display: inline-block;
@@ -65,7 +70,7 @@ body {
 }
 
 .login-btn:hover {
-    box-shadow: rgba(85, 119, 222, 0.35) 0 -25px 18px -14px inset, rgba(85, 119, 222, .25) 0 1px 2px, rgba(85, 119, 222, .25) 0 2px 4px, rgba(85, 119, 222, .25) 0 4px 8px, rgba(85, 119, 222, .25) 0 8px 16px, rgba(85, 119, 222, .25) 0 16px 32px;
+    box-shadow: var(--shadow) 0 -25px 18px -14px inset, var(--shadowb) 0 1px 2px, var(--shadowb) 0 2px 4px, var(--shadowb) 0 4px 8px, var(--shadowb) 0 8px 16px, var(--shadowb) 0 16px 32px;
     transform: scale(1.07);
 }
 
@@ -74,24 +79,29 @@ body {
 }
 
 .Description {
-    position: fixed;
+    /* background-image: url('https://img.freepik.com/free-vector/white-background-with-triangle-patterns_1017-18410.jpg?w=1800&t=st=1660760057~exp=1660760657~hmac=8a5d19f471d1014326c8eab38b13764e66df8a3113521797f55e0f587e7b0933'); */
+    position: absolute;
     font-size: 1.3rem;
-    font-weight: 800;
+    font-weight: 300;
     line-height: 2.2rem;
-    height: 2500px;
+    height: 1000px;
     top: 107px;
     left: 20px;
     right: 20px;
     bottom: 40x;
     padding: 10px;
     border-radius: 15px;
-    background-image: linear-gradient(90.07deg, #A265F2 -16.29%, #985EFF -9.5%, #EA9A91 118.76%, rgba(225, 147, 157, 0.77) 127.64%);
+    /* background-color: rgb(255, 255, 255); */
+    /* background-image: linear-gradient(90.07deg, #A265F2 -16.29%, #985EFF -9.5%, #EA9A91 118.76%, rgba(225, 147, 157, 0.77) 127.64%); */
     background-clip: text;
     -webkit-background-clip: text;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
     /* font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif; */
     /* background-color: rgb(143, 185, 239); */
-    box-shadow: rgba(85, 119, 222, 0.35) 0 -25px 18px -14px inset, rgba(85, 119, 222, .25) 0 1px 2px, rgba(85, 119, 222, .25) 0 2px 4px, rgba(85, 119, 222, .25) 0 4px 8px, rgba(85, 119, 222, .25) 0 8px 16px, rgba(85, 119, 222, .25) 0 16px 32px;
+    /* box-shadow: rgba(85, 119, 222, 0.35) 0 -25px 18px -14px inset, rgba(85, 119, 222, .25) 0 1px 2px, rgba(85, 119, 222, .25) 0 2px 4px, rgba(85, 119, 222, .25) 0 4px 8px, rgba(85, 119, 222, .25) 0 8px 16px, rgba(85, 119, 222, .25) 0 16px 32px; */
+    box-shadow: var(--shadow) 0 -25px 18px -14px inset, var(--shadowb) 0 1px 2px, var(--shadowb) 0 2px 4px, var(--shadowb) 0 4px 8px, var(--shadowb) 0 8px 16px, var(--shadowb) 0 16px 32px;
+
 }
 
 .Header-logo {
