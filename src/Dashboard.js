@@ -7,6 +7,10 @@ class Dashboard extends Component {
   componentDidMount() {
     document.title = "Cerebral Inspection";
   }
+  handleClick() {
+    window.open("/Factorial");
+    // window.location.href = "/One";
+  }
   render() {
     return (
       <form>
@@ -19,7 +23,7 @@ class Dashboard extends Component {
               </Route>
             </Routes>
           </BrowserRouter> */}
-          <button className="login-btn">Join Our Community</button>
+          <button onClick={this.handleClick} className="login-btn">Join Our Community</button>
           <header className="DB-header">
             <img src={logo} className="Header-logo" alt="logo" />
             <div className="Description">
