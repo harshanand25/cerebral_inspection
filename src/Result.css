@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    font-family:"Inter UI", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif ;
+
+}
+
+.slider{
+    position: absolute;
+    height:100px;
+    width: auto;
+    top: 200px;
+    right: 20px;
+    left: 20px;
+    border: 1px;
+    border-color: black;
+    padding: 20px;
+    /* background:linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(237,255,0,1) 50%, rgba(5,214,0,1) 100%); */
+    background-color: aqua;
+    border-radius: 10px;
+    
+
+}
+.precautions{
+    position: absolute;
+    height: 200px;
+    width: auto;
+    top: 500px;
+    right: 20px;
+    left: 20px;
+    /* bottom: 20px; */
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
