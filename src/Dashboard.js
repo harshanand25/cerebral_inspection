@@ -23,11 +23,11 @@ class Dashboard extends Component {
           <header className="DB-header">
             <img src={logo} className="Header-logo" alt="logo" />
             <div className="Description">
-              Cerebral Inspection is a Web Application consisting of simple
-              questionnaire used to screen Mental Health and Color Blindness of
-              a person. It uses a series of Questions and Visual Figures to
-              accurately assess the patients health conditions and provide them
-              with a Test Reports and an ideal remedy.
+              Mental health includes our emotional, psychological, and social
+              well-being. It affects how we think, feel, and act. It also helps
+              determine how we handle stress, relate to others, and make healthy
+              choices. Mental health is important at every stage of life, from
+              childhood and adolescence through adulthood.
             </div>
           </header>
         </div>
