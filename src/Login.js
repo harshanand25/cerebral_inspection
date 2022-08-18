@@ -1,9 +1,26 @@
 // import bgimage from "./bgimage.jpeg";
 import React, { Component } from "react";
 import "./Login.css";
+import Signup from "./Signup";
 class Login extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      isLog: false,
+    };
+  }
+
+  handleClick = () => {
+    this.setState({isLog: true});
+    console.log(this.state.isLog);
+  };
   render() {
     return (
+      <div>
+        {this.state.isLog ? (
+          <Signup />
+        ):(
+
       <body>
         <div class="login-body">
           <div class="login-graphic">
@@ -24,10 +41,12 @@ class Login extends Component {
           </form>
           <div className="login-help">
             Don't have an Account Yet?{" "}
-            <a href="src/Signup.js">Register here.</a>
+            <button className="signup-button"onClick={this.handleClick}>Register here.</button>
           </div>
         </div>
       </body>
+      )}
+      </div>
     );
   }
 }

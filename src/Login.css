@@ -123,3 +123,11 @@ body {
   text-align: center;
   font-size: 12px;
 }
+
+.signup-button{
+  cursor: pointer;
+  padding: 0;
+border: none;
+background: none;
+color: #888;
+}
