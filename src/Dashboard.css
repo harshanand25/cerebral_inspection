@@ -11,7 +11,7 @@
 /* var(--blueL) */
 body {
     background-color: var(--blueL);
-    background-image: url('https://img.freepik.com/free-vector/white-background-with-triangle-patterns_1017-18410.jpg?w=1800&t=st=1660760057~exp=1660760657~hmac=8a5d19f471d1014326c8eab38b13764e66df8a3113521797f55e0f587e7b0933');
+    /* background-image: url('https://img.freepik.com/free-vector/white-background-with-triangle-patterns_1017-18410.jpg?w=1800&t=st=1660760057~exp=1660760657~hmac=8a5d19f471d1014326c8eab38b13764e66df8a3113521797f55e0f587e7b0933'); */
 }
 
 .Header-logo {
@@ -79,7 +79,7 @@ body {
 }
 
 .Description {
-    /* background-image: url('https://img.freepik.com/free-vector/white-background-with-triangle-patterns_1017-18410.jpg?w=1800&t=st=1660760057~exp=1660760657~hmac=8a5d19f471d1014326c8eab38b13764e66df8a3113521797f55e0f587e7b0933'); */
+    background-image: url('https://img.freepik.com/free-vector/white-background-with-triangle-patterns_1017-18410.jpg?w=1800&t=st=1660760057~exp=1660760657~hmac=8a5d19f471d1014326c8eab38b13764e66df8a3113521797f55e0f587e7b0933');
     position: absolute;
     font-size: 1.3rem;
     font-weight: 300;
@@ -93,8 +93,8 @@ body {
     border-radius: 15px;
     /* background-color: rgb(255, 255, 255); */
     /* background-image: linear-gradient(90.07deg, #A265F2 -16.29%, #985EFF -9.5%, #EA9A91 118.76%, rgba(225, 147, 157, 0.77) 127.64%); */
-    background-clip: text;
-    -webkit-background-clip: text;
+    /* background-clip: text;
+    -webkit-background-clip: text; */
     font-family: 'Source Sans Pro', sans-serif;
     /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
     /* font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif; */
