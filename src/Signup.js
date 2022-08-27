@@ -12,7 +12,7 @@ const Signup = (props) => {
   });
 
   const handleChange = (e) => {
-    setData({ ...data, [e.target.value]: e.target.value });
+    setData({ ...data, [e.target.name]: e.target.value });
     console.log(data);
   };
 
@@ -25,7 +25,7 @@ const Signup = (props) => {
     };
     console.log(sendData);
     axios
-      .post("https://localhost/project/login_data.php", sendData)
+      .post("http://localhost/project/login_data.php", sendData)
       .then((result) => {
         if (result.data.Status === "Invalid") {
           alert("Invalid User");
