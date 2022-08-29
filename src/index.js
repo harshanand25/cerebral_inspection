@@ -12,6 +12,7 @@ import Dashboard from "./Dashboard";
 // import Result from "./Result";
 // import Demodb from "./Demodb";
 import reportWebVitals from "./reportWebVitals";
+// import Sid_login from "./Sid_login";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -24,6 +25,7 @@ root.render(
     {/* <MHTQ /> */}
     {/* <RoutingEg /> */}
     {/* < Demodb /> */}
+    {/* <Sid_login /> */}
   </React.StrictMode>
 );
 

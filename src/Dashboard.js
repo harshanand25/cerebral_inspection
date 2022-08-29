@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "./Dashboard.css";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Login";
+// import Sid_login from "./Sid_login";
 class Dashboard extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +25,7 @@ class Dashboard extends Component {
         {this.state.isLog ? (
           <Login />
         ) : (
-          <div>
+          <div className="Body0">
             <form>
               <div className="header-div">
                 <div className="Heading">CEREBRAL INSPECTION</div>

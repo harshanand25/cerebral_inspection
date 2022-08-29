@@ -37,7 +37,7 @@ const Signup = (props) => {
   };
 
   return (
-    <div>
+    <div className="Body2">
       <div className="register-card">
         <h1>Register</h1>
         <form onSubmit={fun}>

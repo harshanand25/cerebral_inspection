@@ -9,7 +9,7 @@
 /* var(--blue) */
 /* var(--blueD) */
 /* var(--blueL) */
-body {
+.Body0 {
     background-color: var(--blueL);
     /* background-image: url('https://img.freepik.com/free-vector/white-background-with-triangle-patterns_1017-18410.jpg?w=1800&t=st=1660760057~exp=1660760657~hmac=8a5d19f471d1014326c8eab38b13764e66df8a3113521797f55e0f587e7b0933'); */
 }
