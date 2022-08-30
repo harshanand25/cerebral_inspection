@@ -1,76 +1,82 @@
 // import React, { Component } from "react";
 import axios from "axios";
-import { useState } from "react";
+import { Component, useState } from "react";
 import "./Signup.css";
 // import { useNavigate } from "react-router-dom";
-const Signup = (props) => {
+class Signup extends Component {
   // let history = useNavigate();
-  const [data, setData] = useState({
-    name: "",
-    email: "",
-    pass: "",
-  });
-
-  const handleChange = (e) => {
-    setData({ ...data, [e.target.name]: e.target.value });
-    console.log(data);
+  constructor() {
+    super();
+    this.state = {
+      name: "",
+      email: "",
+      pass: "",
+    };
+  }
+  handleChange = (e) => {
+    this.setState({ ...this.state, [e.target.name]: e.target.value });
   };
 
-  const fun = (e) => {
-    e.preventDefault();
+  fun = () => {
+    const name = this.state.name;
+    const email = this.state.email;
+    const pass = this.state.pass;
+
     const sendData = {
-      name: data.name,
-      email: data.email,
-      pass: data.pass,
+      name,
+      email,
+      pass,
     };
     console.log(sendData);
+
     axios
-      .post("http://localhost/project/login_data.php", sendData)
+      .get("http://localhost/project/login_data.php", { params: sendData })
       .then((result) => {
         if (result.data.Status === "Invalid") {
           alert("Invalid User");
         }
-        //  else {
-        //   history("/login");
-        // }
       });
   };
-
-  return (
-    <div className="Body2">
-      <div className="register-card">
-        <h1>Register</h1>
-        <form onSubmit={fun}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            onChange={handleChange}
-            value={data.name}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            onChange={handleChange}
-            value={data.email}
-          />
-          <input
-            type="password"
-            name="pass"
-            placeholder="Password"
-            onChange={handleChange}
-            value={data.pass}
-          />
-          <input
-            type="submit"
-            name="register"
-            className="register register-submit"
-            value="Register"
-          />
-        </form>
+  render() {
+    return (
+      <div className="Body2">
+        <div className="register-card">
+          <h1>Register</h1>
+          <form onSubmit={this.fun}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              onChange={this.handleChange}
+              value={this.state.name}
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              onChange={this.handleChange}
+              value={this.state.email}
+              required
+            />
+            <input
+              type="password"
+              name="pass"
+              placeholder="Password"
+              onChange={this.handleChange}
+              value={this.state.pass}
+              required
+            />
+            <input
+              type="submit"
+              name="register"
+              className="register register-submit"
+              value="Register"
+            />
+          </form>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 export default Signup;

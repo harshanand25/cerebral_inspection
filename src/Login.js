@@ -71,6 +71,7 @@ class Login extends Component {
                   label="Email Address"
                   placeholder="Email Address"
                   onChange={this.handleChangeFields}
+                  required
                 />
                 <input
                   type="password"
@@ -79,6 +80,7 @@ class Login extends Component {
                   label="Password"
                   placeholder="Password"
                   onChange={this.handleChangeFields}
+                  required
                 />
 
                 <input
