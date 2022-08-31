@@ -1,0 +1,48 @@
+import React, { useState, useEffect } from "react";
+// import "./Navbar.css";
+
+export const Sid_product = () => {
+  const [item, setItem] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost/project/MHTQ.php")
+      .then((result) => result.json())
+      .then((result) => {
+        setItem(result);
+        console.log(result);
+      });
+  }, []);
+  return (
+    <div className="main">
+      <div className="card">
+        <div className="inner-box">
+          <div>
+            <h2>
+              <u>Products</u>
+            </h2>
+            <table>
+              <tbody>
+                <tr>
+                //   <th>ID</th> 
+                //   <th>Module</th>
+                //   <th>UserID</th>
+                //   <th>Email</th>
+                //   <th>Password</th>
+                </tr>
+
+                {item.map((item) => (
+                  <tr>
+                    {/* <td>{item.id}</td> */}
+                    <td>{item.module}</td>
+                    <td>{item.Userid}</td>
+                    <td>{item.Email}</td>
+                    <td>{item.Password}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
