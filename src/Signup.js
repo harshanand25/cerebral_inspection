@@ -35,12 +35,8 @@ class Signup extends Component {
           alert("Invalid User");
         }
       });
-  };
-  handleClick = () => {
     this.setState({ isLog: true });
-    console.log(this.state.isLog);
   };
-
 
   render() {
     return (
@@ -48,7 +44,6 @@ class Signup extends Component {
         {this.state.isLog ? (
           <Login />
         ) : (
-
           <div className="Body2">
             <div className="register-card">
               <h1>Register</h1>
@@ -82,7 +77,8 @@ class Signup extends Component {
                   name="register"
                   className="register register-submit"
                   value="Register"
-                  onClick={this.handleClick}
+                  id="Submit"
+                  onClick={this.fun}
                 />
               </form>
             </div>

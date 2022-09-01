@@ -46,7 +46,6 @@ class MHTQ extends Component {
     this.setState({ isLog: true });
     console.log(this.state.result);
     alert(this.state.result);
-
   };
 
   render() {
@@ -55,71 +54,69 @@ class MHTQ extends Component {
         {this.state.isLog ? (
           <Result />
         ) : (
-          < div >
-            {
-              this.state.data.map((item) => (
-                <div className="Body3">
-                  <form className="MHTest" id="MHTest">
-                    <div className="header-Div">
-                      <h1>Mental Health Test</h1>
-                      <p>
-                        Easily access your Psychological Health by choosing the most
-                        appropiate option.
-                      </p>
-                    </div>
-                    <div className="space"></div>
-                    <div className="Question">
-                      <div key={item.id}>
-                        {item.id}.{item.que}
-                      </div>
-                      <div className="Choice">
-                        <input
-                          type="radio"
-                          name="choice"
-                          className="question1"
-                          value="Very Unlikely"
-                          onClick={() => this.handleChange4()}
-                        />
-                        Very Unlikely
-                      </div>
-                      <div className="Choice">
-                        <input
-                          type="radio"
-                          name="choice"
-                          className="question1"
-                          value="Unlikely"
-                          onClick={this.handleChange3}
-                        />
-                        Unlikely
-                      </div>
-                      <div className="Choice">
-                        <input
-                          type="radio"
-                          name="choice"
-                          className="question1"
-                          value="Likely"
-                          onClick={this.handleChange2}
-                        />
-                        Likely
-                      </div>
-                      <div className="Choice">
-                        <input
-                          type="radio"
-                          name="choice"
-                          className="question1"
-                          value="Very Likely"
-                          onClick={this.handleChange1}
-                        />
-                        Very Likely
-                      </div>
-                    </div>
-                    <div className="space"></div>
-                  </form>
+          <div>
+            {this.state.data.map((item) => (
+              <div className="Body3">
+                <form className="MHTest" id="MHTest">
+                  <div className="header-Div">
+                    <h1>Mental Health Test</h1>
+                    <p>
+                      Easily access your Psychological Health by choosing the
+                      most appropiate option.
+                    </p>
+                  </div>
                   <div className="space"></div>
-                </div>
-              ))
-            }
-            < div >
+                  <div className="Question">
+                    <div key={item.id}>
+                      {item.id}.{item.que}
+                    </div>
+                    <div className="Choice">
+                      <input
+                        type="radio"
+                        name="choice"
+                        className="question1"
+                        value="Very Unlikely"
+                        onClick={() => this.handleChange4()}
+                      />
+                      Very Unlikely
+                    </div>
+                    <div className="Choice">
+                      <input
+                        type="radio"
+                        name="choice"
+                        className="question1"
+                        value="Unlikely"
+                        onClick={this.handleChange3}
+                      />
+                      Unlikely
+                    </div>
+                    <div className="Choice">
+                      <input
+                        type="radio"
+                        name="choice"
+                        className="question1"
+                        value="Likely"
+                        onClick={this.handleChange2}
+                      />
+                      Likely
+                    </div>
+                    <div className="Choice">
+                      <input
+                        type="radio"
+                        name="choice"
+                        className="question1"
+                        value="Very Likely"
+                        onClick={this.handleChange1}
+                      />
+                      Very Likely
+                    </div>
+                  </div>
+                  <div className="space"></div>
+                </form>
+                <div className="space"></div>
+              </div>
+            ))}
+            <div>
               <input
                 type="button"
                 className="Submit_Response"
@@ -129,9 +126,9 @@ class MHTQ extends Component {
                 onClick={this.show}
               />
             </div>
-          </div >
+          </div>
         )}
-      </div >
+      </div>
     );
   }
 }
