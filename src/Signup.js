@@ -1,16 +1,15 @@
-// import React, { Component } from "react";
 import axios from "axios";
-import { Component, useState } from "react";
+import { Component } from "react";
 import "./Signup.css";
-// import { useNavigate } from "react-router-dom";
+import Login from "./Login";
 class Signup extends Component {
-  // let history = useNavigate();
   constructor() {
     super();
     this.state = {
       name: "",
       email: "",
       pass: "",
+      isLog: false,
     };
   }
   handleChange = (e) => {
@@ -37,44 +36,58 @@ class Signup extends Component {
         }
       });
   };
+  handleClick = () => {
+    this.setState({ isLog: true });
+    console.log(this.state.isLog);
+  };
+
+
   render() {
     return (
-      <div className="Body2">
-        <div className="register-card">
-          <h1>Register</h1>
-          <form onSubmit={this.fun}>
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              onChange={this.handleChange}
-              value={this.state.name}
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              onChange={this.handleChange}
-              value={this.state.email}
-              required
-            />
-            <input
-              type="password"
-              name="pass"
-              placeholder="Password"
-              onChange={this.handleChange}
-              value={this.state.pass}
-              required
-            />
-            <input
-              type="submit"
-              name="register"
-              className="register register-submit"
-              value="Register"
-            />
-          </form>
-        </div>
+      <div>
+        {this.state.isLog ? (
+          <Login />
+        ) : (
+
+          <div className="Body2">
+            <div className="register-card">
+              <h1>Register</h1>
+              <form onSubmit={this.fun}>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  onChange={this.handleChange}
+                  value={this.state.name}
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  onChange={this.handleChange}
+                  value={this.state.email}
+                  required
+                />
+                <input
+                  type="password"
+                  name="pass"
+                  placeholder="Password"
+                  onChange={this.handleChange}
+                  value={this.state.pass}
+                  required
+                />
+                <input
+                  type="submit"
+                  name="register"
+                  className="register register-submit"
+                  value="Register"
+                  onClick={this.handleClick}
+                />
+              </form>
+            </div>
+          </div>
+        )}
       </div>
     );
   }
