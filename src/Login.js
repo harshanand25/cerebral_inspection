@@ -7,7 +7,7 @@ class Login extends Component {
   constructor() {
     super();
     this.state = {
-      email: "",
+      email: "", 
       pass: "",
       msg: "aaaa",
       isLoggedIn: false,

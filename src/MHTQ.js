@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import "./MHTQ.css";
 import axios from "axios";
+import Result from "./Result";
 class MHTQ extends Component {
   constructor(props) {
     super();
     this.state = {
       data: [],
       result: 0,
+      isLog: false,
     };
   }
   componentDidMount() {
@@ -22,16 +24,6 @@ class MHTQ extends Component {
         console.log(res);
       });
   }
-
-  // const [data, setItem] = useState([]);
-  // useEffect(() => {
-  //   fetch("http://localhost/project/MHTQ.php")
-  //     .then((result) => result.json())
-  //     .then((result) => {
-  //       setItem(result);
-  //       console.log(result);
-  //     });
-  // }, []);
 
   handleChange1 = () => {
     this.setState({ result: this.state.result + 1 });
@@ -51,86 +43,95 @@ class MHTQ extends Component {
   };
 
   show = () => {
+    this.setState({ isLog: true });
     console.log(this.state.result);
     alert(this.state.result);
+
   };
 
   render() {
     return (
       <div>
-        {/* {" "} */}
-        {this.state.data.map((item) => (
-          <div className="Body3">
-            <form className="MHTest" id="MHTest">
-              <div className="header-Div">
-                <h1>Mental Health Test</h1>
-                <p>
-                  Easily access your Psychological Health by choosing the most
-                  appropiate option.
-                </p>
-              </div>
-              <div className="space"></div>
-              <div className="Question">
-                <div key={item.id}>
-                  {item.id}.{item.que}
+        {this.state.isLog ? (
+          <Result />
+        ) : (
+          < div >
+            {
+              this.state.data.map((item) => (
+                <div className="Body3">
+                  <form className="MHTest" id="MHTest">
+                    <div className="header-Div">
+                      <h1>Mental Health Test</h1>
+                      <p>
+                        Easily access your Psychological Health by choosing the most
+                        appropiate option.
+                      </p>
+                    </div>
+                    <div className="space"></div>
+                    <div className="Question">
+                      <div key={item.id}>
+                        {item.id}.{item.que}
+                      </div>
+                      <div className="Choice">
+                        <input
+                          type="radio"
+                          name="choice"
+                          className="question1"
+                          value="Very Unlikely"
+                          onClick={() => this.handleChange4()}
+                        />
+                        Very Unlikely
+                      </div>
+                      <div className="Choice">
+                        <input
+                          type="radio"
+                          name="choice"
+                          className="question1"
+                          value="Unlikely"
+                          onClick={this.handleChange3}
+                        />
+                        Unlikely
+                      </div>
+                      <div className="Choice">
+                        <input
+                          type="radio"
+                          name="choice"
+                          className="question1"
+                          value="Likely"
+                          onClick={this.handleChange2}
+                        />
+                        Likely
+                      </div>
+                      <div className="Choice">
+                        <input
+                          type="radio"
+                          name="choice"
+                          className="question1"
+                          value="Very Likely"
+                          onClick={this.handleChange1}
+                        />
+                        Very Likely
+                      </div>
+                    </div>
+                    <div className="space"></div>
+                  </form>
+                  <div className="space"></div>
                 </div>
-                <div className="Choice">
-                  <input
-                    type="radio"
-                    name="choice"
-                    className="question1"
-                    value="Very Unlikely"
-                    onClick={() => this.handleChange4()}
-                  />
-                  Very Unlikely
-                </div>
-                <div className="Choice">
-                  <input
-                    type="radio"
-                    name="choice"
-                    className="question1"
-                    value="Unlikely"
-                    onClick={this.handleChange3}
-                  />
-                  Unlikely
-                </div>
-                <div className="Choice">
-                  <input
-                    type="radio"
-                    name="choice"
-                    className="question1"
-                    value="Likely"
-                    onClick={this.handleChange2}
-                  />
-                  Likely
-                </div>
-                <div className="Choice">
-                  <input
-                    type="radio"
-                    name="choice"
-                    className="question1"
-                    value="Very Likely"
-                    onClick={this.handleChange1}
-                  />
-                  Very Likely
-                </div>
-              </div>
-              <div className="space"></div>
-            </form>
-            <div className="space"></div>
-          </div>
-        ))}
-        <div>
-          <input
-            type="button"
-            className="Submit_Response"
-            value="Submit Response"
-            id="Submit"
-            // onClick="yield()"
-            onClick={this.show}
-          />
-        </div>
-      </div>
+              ))
+            }
+            < div >
+              <input
+                type="button"
+                className="Submit_Response"
+                value="Submit Response"
+                id="Submit"
+                // onClick="yield()"
+                onClick={this.show}
+              />
+            </div>
+          </div >
+        )}
+      </div >
     );
   }
 }
