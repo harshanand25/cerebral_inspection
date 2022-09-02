@@ -7,8 +7,12 @@ class MHTQ extends Component {
     super();
     this.state = {
       data: [],
-      result: 0,
+      result1: 0,
+      result2: 0,
+      result3: 0,
+      result4: 0,
       isLog: false,
+      sum: 0,
     };
   }
   componentDidMount() {
@@ -25,39 +29,35 @@ class MHTQ extends Component {
       });
   }
 
-  handleChange1 = () => {
-    this.setState({ result: this.state.result + 1 });
-    console.log(this.state.result);
+  hand = (e) => {
+    let k = 0;
+    // alert(e.item.log);
+    k = parseInt(e.target.value);
+    /// alert(k);
+    this.setState({ sum: this.state.sum + k });
   };
-  handleChange2 = () => {
-    this.setState({ result: this.state.result + 2 });
-    console.log(this.state.result);
-  };
-  handleChange3 = () => {
-    this.setState({ result: this.state.result + 3 });
-    console.log(this.state.result);
-  };
-  handleChange4 = () => {
-    this.setState({ result: this.state.result + 4 });
-    console.log(this.state.result);
+
+  fun = (e) => {
+    //alert("Welcome");
+    e.preventDefault();
   };
 
   show = () => {
     this.setState({ isLog: true });
-    console.log(this.state.result);
-    alert(this.state.result);
+
+    console.log(this.state.sum);
   };
 
   render() {
     return (
       <div>
         {this.state.isLog ? (
-          <Result />
+          <Result res={this.state.sum} />
         ) : (
           <div>
-            {this.state.data.map((item) => (
-              <div className="Body3">
-                <form className="MHTest" id="MHTest">
+            <form className="MHTest" id="MHTest" onSubmit={this.fun}>
+              {this.state.data.map((item) => (
+                <div className="Body3">
                   <div className="header-Div">
                     <h1>Mental Health Test</h1>
                     <p>
@@ -73,59 +73,62 @@ class MHTQ extends Component {
                     <div className="Choice">
                       <input
                         type="radio"
-                        name="choice"
+                        name={"ch" + item.id}
                         className="question1"
-                        value="Very Unlikely"
-                        onClick={() => this.handleChange4()}
+                        value="4"
+                        onClick={this.hand}
                       />
                       Very Unlikely
                     </div>
                     <div className="Choice">
                       <input
                         type="radio"
-                        name="choice"
+                        name={"ch" + item.id}
                         className="question1"
-                        value="Unlikely"
-                        onClick={this.handleChange3}
+                        value="3"
+                        onClick={this.hand}
                       />
                       Unlikely
                     </div>
                     <div className="Choice">
                       <input
                         type="radio"
-                        name="choice"
+                        name={"ch" + item.id}
                         className="question1"
-                        value="Likely"
-                        onClick={this.handleChange2}
+                        value="2"
+                        onClick={this.hand}
                       />
                       Likely
                     </div>
+                    kalu bhalu
                     <div className="Choice">
                       <input
                         type="radio"
-                        name="choice"
+                        name={"ch" + item.id}
                         className="question1"
-                        value="Very Likely"
-                        onClick={this.handleChange1}
+                        value="1"
+                        onClick={this.hand}
                       />
                       Very Likely
                     </div>
                   </div>
                   <div className="space"></div>
-                </form>
-                <div className="space"></div>
+
+                  <div className="space"></div>
+                </div>
+              ))}
+
+              <div>
+                <input
+                  type="submit"
+                  className="Submit_Response"
+                  value="Submit Response"
+                  id="Submit"
+                  // onClick="yield()"
+                  // onClick={this.show}
+                />
               </div>
-            ))}
-            <div>
-              <input
-                type="button"
-                className="Submit_Response"
-                value="Submit Response"
-                id="Submit"
-                // onClick="yield()"
-                onClick={this.show}
-              />
-            </div>
+            </form>
           </div>
         )}
       </div>

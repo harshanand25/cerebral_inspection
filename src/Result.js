@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import "./Result.css";
 class Result extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <body>
         <div className="container">
           <div className="title">
-            <h1 className="header">Results</h1>
+            <h1 className="header">Results {this.props.res}</h1>
           </div>
           <div className="slider">
             <h1></h1>
