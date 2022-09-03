@@ -7,10 +7,10 @@ class MHTQ extends Component {
     super();
     this.state = {
       data: [],
-      result1: 0,
-      result2: 0,
-      result3: 0,
-      result4: 0,
+      // result1: 0,
+      // result2: 0,
+      // result3: 0,
+      // result4: 0,
       isLog: false,
       sum: 0,
     };
@@ -33,17 +33,21 @@ class MHTQ extends Component {
     let k = 0;
     // alert(e.item.log);
     k = parseInt(e.target.value);
-    /// alert(k);
+    alert(k);
     this.setState({ sum: this.state.sum + k });
+    console.log(this.state.sum);
+    // console.log(this.state.k);
   };
 
   fun = (e) => {
-    //alert("Welcome");
     e.preventDefault();
+    alert(this.state.sum);
+    this.setState({ clicked: Number(e.target.value) });
+    console.log(e.target.value);
   };
 
   show = () => {
-    this.setState({ isLog: true });
+    // this.setState({ isLog: true });
 
     console.log(this.state.sum);
   };
@@ -73,7 +77,7 @@ class MHTQ extends Component {
                     <div className="Choice">
                       <input
                         type="radio"
-                        name={"ch" + item.id}
+                        name={"choice" + item.id}
                         className="question1"
                         value="4"
                         onClick={this.hand}
@@ -83,7 +87,7 @@ class MHTQ extends Component {
                     <div className="Choice">
                       <input
                         type="radio"
-                        name={"ch" + item.id}
+                        name={"choice" + item.id}
                         className="question1"
                         value="3"
                         onClick={this.hand}
@@ -93,18 +97,17 @@ class MHTQ extends Component {
                     <div className="Choice">
                       <input
                         type="radio"
-                        name={"ch" + item.id}
+                        name={"choice" + item.id}
                         className="question1"
                         value="2"
                         onClick={this.hand}
                       />
                       Likely
                     </div>
-                    kalu bhalu
                     <div className="Choice">
                       <input
                         type="radio"
-                        name={"ch" + item.id}
+                        name={"choice" + item.id}
                         className="question1"
                         value="1"
                         onClick={this.hand}
@@ -112,8 +115,6 @@ class MHTQ extends Component {
                       Very Likely
                     </div>
                   </div>
-                  <div className="space"></div>
-
                   <div className="space"></div>
                 </div>
               ))}
