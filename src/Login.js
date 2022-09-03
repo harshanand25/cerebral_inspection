@@ -4,9 +4,10 @@ import Signup from "./Signup";
 import MHTQ from "./MHTQ";
 import "./Login.css";
 class Login extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
+      name: "",
       email: "",
       pass: "",
       msg: "aaaa",
@@ -16,10 +17,12 @@ class Login extends Component {
     this.handleChangeFields = this.handleChangeFields.bind(this);
   }
   handleLogin = () => {
+    const name = this.state.name;
     const email = this.state.email;
     const pass = this.state.pass;
 
     const data = {
+      name,
       email,
       pass,
     };
@@ -32,6 +35,8 @@ class Login extends Component {
         if (kalu.data[0].answer === "valid") {
           this.setState({
             isLoggedIn: true,
+
+            // name:
           });
         } else {
           alert("not Valid");
@@ -41,6 +46,7 @@ class Login extends Component {
         alert(err);
       });
   };
+
   handleChangeFields = (e1) => {
     this.setState({
       ...this.state,
@@ -48,16 +54,17 @@ class Login extends Component {
     });
     console.log(this.state, "formField");
   };
+
   handleClick = () => {
-    // if (this.State.email !== "") {
     this.setState({ isLog: true });
     console.log(this.state.isLog);
   };
+
   render() {
     return (
       <div>
         {this.state.isLog ? (
-          <Signup />
+          <Signup kalu={this.state.name} />
         ) : (
           <div>
             {this.state.isLoggedIn ? (
