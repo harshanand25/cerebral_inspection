@@ -1,9 +1,7 @@
 import logo from "./logo.png";
 import React, { Component } from "react";
 import "./Dashboard.css";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Login";
-// import Sid_login from "./Sid_login";
 class Dashboard extends Component {
   constructor(props) {
     super(props);
@@ -15,10 +13,12 @@ class Dashboard extends Component {
   componentDidMount() {
     document.title = "Cerebral Inspection";
   }
+
   handleClick = () => {
     this.setState({ isLog: true });
     console.log(this.state.isLog);
   };
+
   render() {
     return (
       <div>
