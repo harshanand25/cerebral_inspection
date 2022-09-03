@@ -17,26 +17,25 @@ class Login extends Component {
     this.handleChangeFields = this.handleChangeFields.bind(this);
   }
   handleLogin = () => {
-    const name = this.state.name;
     const email = this.state.email;
     const pass = this.state.pass;
 
     const data = {
-      name,
       email,
       pass,
     };
     axios
       .get("http://localhost/project/login.php", { params: data })
       .then((kalu) => {
-        console.log(kalu);
-        console.log(kalu.data[0].answer);
+        console.log(kalu, "tatata");
+        // console.log(kalu.data[0].answer);
+        console.log(kalu.data[(1, [1])]);
 
         if (kalu.data[0].answer === "valid") {
           this.setState({
             isLoggedIn: true,
 
-            // name:
+            // name: kalu.data[1].name,
           });
         } else {
           alert("not Valid");
