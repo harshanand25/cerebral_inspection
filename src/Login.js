@@ -29,13 +29,13 @@ class Login extends Component {
       .then((kalu) => {
         console.log(kalu, "tatata");
         // console.log(kalu.data[0].answer);
-        console.log(kalu.data[(1, [1])]);
+        console.log(kalu.data[(1, [1, [0]])], "hello");
 
         if (kalu.data[0].answer === "valid") {
           this.setState({
             isLoggedIn: true,
 
-            // name: kalu.data[1].name,
+            // name: kalu.data[1],
           });
         } else {
           alert("not Valid");
@@ -63,11 +63,11 @@ class Login extends Component {
     return (
       <div>
         {this.state.isLog ? (
-          <Signup kalu={this.state.name} />
+          <Signup />
         ) : (
           <div>
             {this.state.isLoggedIn ? (
-              <MHTQ />
+              <MHTQ kalu={this.state.name} />
             ) : (
               <div className="Body1">
                 <div className="login-body">

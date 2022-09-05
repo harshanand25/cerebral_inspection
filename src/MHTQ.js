@@ -44,18 +44,18 @@ class MHTQ extends Component {
 
   render() {
     return (
-      <div className="Body3">
+      <div className="container">
         {this.state.isLog ? (
           <Result res={this.state.sum} />
         ) : (
-          <div>
+          <div className="Body3">
             <form className="MHTest" id="MHTest" onSubmit={this.fun}>
               {this.state.data.map((item) => (
                 <div>
                   <div className="header-Div">
                     <h1>Mental Health Test</h1>
                     <p>
-                      Welcome, {this.props.name} Easily access your
+                      Welcome, {this.props.user} Easily access your
                       Psychological Health by choosing the most appropiate
                       option.
                     </p>

@@ -8,9 +8,7 @@ import ReactDOM from "react-dom/client";
 import Dashboard from "./Dashboard";
 // import Testselection from "./Testselection";
 // import Testselector from "./Testselector";
-// import RoutingEg from "./RoutingEg";
 // import Result from "./Result";
-// import Demodb from "./Demodb";
 import reportWebVitals from "./reportWebVitals";
 // import Sid_login from "./Sid_login";
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -23,9 +21,6 @@ root.render(
     {/* <Testselector /> */}
     {/* <Testselection /> */}
     {/* <MHTQ /> */}
-    {/* <RoutingEg /> */}
-    {/* < Demodb /> */}
-    {/* <Sid_login /> */}
   </React.StrictMode>
 );
 

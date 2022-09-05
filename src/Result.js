@@ -9,11 +9,9 @@ class Result extends Component {
       <body>
         <div className="container">
           <div className="title">
-            <h1 className="header">Results {this.props.res}</h1>
+            <h1 className="header">Results {(this.props.res / 112) * 100}%</h1>
           </div>
-          <div className="slider">
-            <h1></h1>
-          </div>
+          <div className="slider">{/* <h1></h1> */}</div>
         </div>
         <div className="precautions">
           <h1> Precautions:</h1>
