@@ -55,7 +55,7 @@ class MHTQ extends Component {
                   <div className="header-Div">
                     <h1>Mental Health Test</h1>
                     <p>
-                      Welcome, {this.props.user} Easily access your
+                      Welcome, {this.props.kalu} Easily access your
                       Psychological Health by choosing the most appropiate
                       option.
                     </p>

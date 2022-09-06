@@ -28,14 +28,13 @@ class Login extends Component {
       .get("http://localhost/project/login.php", { params: data })
       .then((kalu) => {
         console.log(kalu, "tatata");
-        // console.log(kalu.data[0].answer);
-        console.log(kalu.data[(1, [1, [0]])], "hello");
-
+        console.log(kalu.data[0].answer);
+        console.log(kalu.data[0].name);
         if (kalu.data[0].answer === "valid") {
           this.setState({
             isLoggedIn: true,
 
-            // name: kalu.data[1],
+            name: kalu.data[0].name,
           });
         } else {
           alert("not Valid");
